@@ -16,4 +16,10 @@ public class Tarefa {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
+    @Override
+    public String toString() {
+        return "--= TAREFAS =--" +"\n"+
+                "Descricao: " + descricao+"\n";
+    }
 }
