@@ -66,7 +66,7 @@ public class CatalogoLivros {
         catalogo.adicionarLivro("Java®: Como Programar",
                 "Harvey Deitel",
                 2017);
-        catalogo.adicionarLivro("Cómo programar en JAVA\n" +
+        catalogo.adicionarLivro("Cómo programar en JAVA"+"\n" +
                 "Edição Espanhol"," Paul J Deitel ",2018);
 
 
@@ -76,7 +76,11 @@ public class CatalogoLivros {
 
         System.out.print("Digite um título para pesquisar: ");
         String pesquisa=sc.nextLine();
-        System.out.println("Você pesquisou por: "+ catalogo.pesquisaAutor(pesquisa));
+        System.out.println("Você pesquisou por: "+ catalogo.pesquisaPorTitulo(pesquisa));
+        System.out.print("Pesquisa por ano de publicação: ");
+        int anoI=sc.nextInt();
+        int anoF= sc.nextInt();
+        System.out.println("A pesquisa encontrou: "+catalogo.pesquisaIntervaloAno(anoI,anoF));
 
 
 
